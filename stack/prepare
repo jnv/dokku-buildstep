@@ -12,6 +12,7 @@ DEBIAN_FRONTEND=noninteractive
 # SYSTEM PACKAGES
 #
 apt-get update
+apt-get dist-upgrade -y
 xargs apt-get install -y --force-yes < /build/packages.txt
 apt-get clean
 
